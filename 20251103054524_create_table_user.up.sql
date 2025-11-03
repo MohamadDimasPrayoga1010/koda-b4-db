@@ -1,4 +1,4 @@
-CREATE TABLE users{
+CREATE TABLE users(
     id SERIAL PRIMARY KEY,
     fullname VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
@@ -6,9 +6,9 @@ CREATE TABLE users{
     role VARCHAR(100),
     created_at TIMESTAMP DEFAULT now(),
     updated_at TIMESTAMP DEFAULT now()
-};
+);
 
-CREATE TABLE profile{
+CREATE TABLE profile(
     id SERIAL PRIMARY KEY,
     user_id BIGINT UNIQUE REFERENCES users(id),
     image VARCHAR(250),
@@ -16,4 +16,4 @@ CREATE TABLE profile{
     address VARCHAR(250),
     created_at TIMESTAMP DEFAULT now(),
     updated_at TIMESTAMP DEFAULT now()
-}
+)
