@@ -9,4 +9,4 @@ CREATE TABLE products(
     created_at TIMESTAMP DEFAULT now(),
     updated_at TIMESTAMP DEFAULT now(),
     deleted_at TIMESTAMP DEFAULT now()
-);
+); 

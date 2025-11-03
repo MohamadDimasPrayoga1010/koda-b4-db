@@ -4,4 +4,4 @@ CREATE TABLE forgot_password(
     token VARCHAR(100),
     expires_at TIMESTAMP DEFAULT now(),
     created_at TIMESTAMP DEFAULT now()
-);
+); 

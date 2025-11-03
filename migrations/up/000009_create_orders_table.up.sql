@@ -7,4 +7,4 @@ CREATE TABLE orders (
     total NUMERIC NOT NULL,
     status_id BIGINT REFERENCES status(id),
     created_at TIMESTAMP DEFAULT now()
-);
+); 

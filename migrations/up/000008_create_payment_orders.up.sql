@@ -15,3 +15,4 @@ CREATE TABLE status (
     id SERIAL PRIMARY KEY,
     name VARCHAR(20) NOT NULL UNIQUE
 );
+ 

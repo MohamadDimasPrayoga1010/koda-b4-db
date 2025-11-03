@@ -4,4 +4,4 @@ CREATE TABLE orders_products (
     product_id BIGINT REFERENCES products(id),
     size_id INT REFERENCES sizes(id),
     qty INT
-);
+); 

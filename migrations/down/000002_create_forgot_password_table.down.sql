@@ -1,1 +1,1 @@
-DROP TABLE IF EXISTS forgot_password
+DROP TABLE IF EXISTS forgot_password 
