@@ -6,11 +6,6 @@ CREATE TABLE payment_methods (
     updated_at TIMESTAMP DEFAULT now()
 );
 
-CREATE TABLE sizes(
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100) NOT NULL UNIQUE,
-    additional_price NUMERIC
-);
 CREATE TABLE shippings (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50) UNIQUE
