@@ -11,6 +11,7 @@ CREATE TABLE promos (
 );
 
 CREATE TABLE product_promos (
+    id SERIAL PRIMARY KEY
     promo_id BIGINT REFERENCES promos(id),
     product_id BIGINT REFERENCES products(id)
 );
