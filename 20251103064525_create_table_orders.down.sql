@@ -1,9 +1,6 @@
-DROP TABLE IF EXISTS payment_methods;
-
-DROP TABLE IF EXISTS orders;
-
 DROP TABLE IF EXISTS orders_products;
-
-DROP TABLE IF EXISTS shippings;
-
+DROP TABLE IF EXISTS orders;
 DROP TABLE IF EXISTS status;
+DROP TABLE IF EXISTS shippings;
+DROP TABLE IF EXISTS sizes;
+DROP TABLE IF EXISTS payment_methods;
