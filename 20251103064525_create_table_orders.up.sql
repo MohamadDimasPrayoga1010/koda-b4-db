@@ -7,7 +7,7 @@ CREATE TABLE payment_methods (
 );
 
 CREATE TABLE shippings (
-    id SERIAL PRIMARY KEY
+    id SERIAL PRIMARY KEY,
     name VARCHAR(50) UNIQUE
 );
 
@@ -28,6 +28,7 @@ CREATE TABLE orders (
 );
 
 CREATE TABLE orders_products (
+    id SERIAL PRIMARY KEY
     order_id BIGINT REFERENCES orders(id),
     product_id BIGINT REFERENCES products(id),
     size_id INT REFERENCES sizes(id),
