@@ -1,0 +1,10 @@
+CREATE TABLE orders (
+    id SERIAL PRIMARY KEY,
+    user_id BIGINT REFERENCES users(id),
+    payment_method BIGINT REFERENCES payment_methods(id),
+    shipping_id BIGINT REFERENCES shippings(id),
+    no_orders VARCHAR(50),
+    total NUMERIC NOT NULL,
+    status_id BIGINT REFERENCES status(id),
+    created_at TIMESTAMP DEFAULT now()
+);
