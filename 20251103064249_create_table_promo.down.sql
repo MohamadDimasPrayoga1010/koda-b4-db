@@ -1,3 +1,3 @@
-DROP TABLE IF EXISTS promos;
-
 DROP TABLE IF EXISTS product_promos;
+
+DROP TABLE IF EXISTS promos;
