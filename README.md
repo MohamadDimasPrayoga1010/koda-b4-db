@@ -22,6 +22,14 @@ profile {
     timestamp updated_at
 }
 
+forgot_password {
+    bigint id PK
+    bigint user_id FK
+    varchar(100) token
+    timestamp expires_at
+    timestamp created_at
+}
+
 variants {
     bigint id PK
     varchar(100) name
@@ -125,9 +133,8 @@ product_sizes {
     int size_id FK
 }
 
-
-%% ========================= RELATIONSHIPS =========================
 users ||--|| profile : "has"
+users ||--|| forgot_password : "has"
 users ||--o{ orders : "makes"
 
 orders ||--|| payment_methods : "uses"
@@ -147,6 +154,7 @@ products ||--o{ product_promos : "linked to"
 product_promos ||--|| promos : "applies promo"
 
 variants ||--o{ products : "has variant"
+
 
 
 
