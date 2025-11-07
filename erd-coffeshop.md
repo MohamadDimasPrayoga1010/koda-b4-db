@@ -1,3 +1,5 @@
+# ERD COFFEE SHOP
+
 ```mermaid
 erDiagram
 
